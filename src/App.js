@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Tasks from './components/tasks'
+import Tasks from './components/Tasks'
 
 import './App.css'
 
