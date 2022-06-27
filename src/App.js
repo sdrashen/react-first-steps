@@ -21,10 +21,14 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <Tasks />
+        <Tasks tasks={tasks} />
       </div>
     </>
   )
 }
+
+//Props são dados que podem ser passados de um componente pai para um componente filho
+//Nesse caso, ao App é o comp pai da Tasks, porque ele está renderizando a Tasks
+//No file tasks.js recebe um parâmetro chamado props
 
 export default App
