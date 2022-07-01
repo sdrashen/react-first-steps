@@ -1,0 +1,19 @@
+.button {
+  background-color: chartreuse;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*.add-task-button-container {
+ * margin-left: 10px;
+ * flex: 1;
+*}
+*Não foi colocado aqui porque compromete a reusabilidade desse componente. *Sempre tentar deixar o componente o mais flexível possível. 
+*/
