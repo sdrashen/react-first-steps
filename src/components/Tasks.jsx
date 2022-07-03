@@ -2,13 +2,13 @@ import React from 'react'
 import Task from './Task'
 // const Tasks = props => {
 //Já que as tasks estão dentro do objeto props, é possível fazer isso abaixo:
-const Tasks = ({ tasks }) => {
+const Tasks = ({ tasks, handleTaskClick }) => {
   //Pode dar um console.log aqui para ver o obj e tasks se quiser/for necessário
   return (
     //Renderizar uma task para cada Tasks
     <>
       {tasks.map(task => (
-        <Task task={task} />
+        <Task task={task} handleTaskClick={handleTaskClick} />
       ))}
     </>
   )
