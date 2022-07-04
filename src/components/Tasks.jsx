@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Task from './Task'
+
 // const Tasks = props => {
 //Já que as tasks estão dentro do objeto props, é possível fazer isso abaixo:
 const Tasks = ({ tasks, handleTaskClick, handleTaskDeletion }) => {
