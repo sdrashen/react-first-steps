@@ -76,7 +76,7 @@ const App = () => {
             </>
           )}
         />
-        <Route path="" exact render={TaskDetails} />
+        <Route path="/:taskTitle" exact component={TaskDetails} />
       </div>
     </Router>
     //Precisamos fazer o mapeamento de cada "page" para os nossos componentes
