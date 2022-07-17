@@ -1,8 +1,19 @@
 import React from 'react'
 import { CgClose, CgInfo } from 'react-icons/cg'
+
+//To navigate through pages
+import { useHistory } from 'react-router-dom'
+//Usamos o dom porque é react web se fosse mobile seria outro
+
 import './Task.css'
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
+  const history = useHistory()
+
+  const handleTaskDetailsClick = () => {
+    history.push(`/${task.title}`)
+  }
+
   return (
     <div
       className="task-container"
@@ -24,6 +35,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
         </button>
         <button
           className="see-task-details-button"
+          onClick={handleTaskDetailsClick}
           // onClick={}
         >
           <CgInfo />
